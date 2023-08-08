@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
+class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Home')),
+      appBar: AppBar(title: Text('Profile')),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
@@ -24,14 +24,14 @@ class HomeScreen extends StatelessWidget {
             ListTile(
               title: Text('Profile'),
               onTap: () {
-                Navigator.pop(context); // Close the drawer
+                Navigator.pop(context); 
                 Navigator.pushNamed(context, '/profile');
               },
             ),
             ListTile(
               title: Text('Settings'),
               onTap: () {
-                Navigator.pop(context); // Close the drawer
+                Navigator.pop(context); 
                 Navigator.pushNamed(context, '/settings');
               },
             ),
@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       body: Center(
-        child: Text('Selamat datang di Home screen personal space!'),
+        child: Text('Profil penulis : Aplikasi ini dibuat oleh Michellius Steven C./20210120060 , penulis yang terkenal malas ini lebih suka menyelesaikan tugas secepat mungkin lalu ditinggal dari pikiran'),
       ),
     );
   }

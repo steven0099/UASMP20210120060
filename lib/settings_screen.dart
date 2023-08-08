@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
+class SettingsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Home')),
+      appBar: AppBar(title: Text('Settings')),
       drawer: Drawer(
         child: ListView(
           padding: EdgeInsets.zero,
@@ -24,14 +24,14 @@ class HomeScreen extends StatelessWidget {
             ListTile(
               title: Text('Profile'),
               onTap: () {
-                Navigator.pop(context); // Close the drawer
+                Navigator.pop(context);
                 Navigator.pushNamed(context, '/profile');
               },
             ),
             ListTile(
               title: Text('Settings'),
               onTap: () {
-                Navigator.pop(context); // Close the drawer
+                Navigator.pop(context);
                 Navigator.pushNamed(context, '/settings');
               },
             ),
@@ -39,7 +39,7 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       body: Center(
-        child: Text('Selamat datang di Home screen personal space!'),
+        child: Text('Maaf, belum ada settingan, karena ini bukan drama YouTube maupun Sinetron'),
       ),
     );
   }
