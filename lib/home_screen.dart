@@ -22,17 +22,31 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             ListTile(
+              title: Text('Home'),
+              onTap: () {
+                Navigator.pop(context); 
+                Navigator.pushNamed(context, '/home');
+              },
+            ),
+            ListTile(
               title: Text('Profile'),
               onTap: () {
-                Navigator.pop(context); // Close the drawer
+                Navigator.pop(context); 
                 Navigator.pushNamed(context, '/profile');
               },
             ),
             ListTile(
               title: Text('Settings'),
               onTap: () {
-                Navigator.pop(context); // Close the drawer
+                Navigator.pop(context); 
                 Navigator.pushNamed(context, '/settings');
+              },
+            ),
+                        ListTile(
+              title: Text('Logout'),
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.pushNamed(context, '/');
               },
             ),
           ],
